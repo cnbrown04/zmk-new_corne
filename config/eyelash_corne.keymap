@@ -31,6 +31,13 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
+
+        rgb_colors: rgb_colors {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "RGB_COLORS";
+            #sensor-binding-cells = <0>;
+            bindings = <&rgb_ug RGB_HUI>, <&rgb_ug RGB_HUD>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -105,6 +112,8 @@
 &trans                           &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
                                                  &trans  &trans  &trans                                    &trans  &trans  &trans
             >;
+
+            sensor-bindings = <&rgb_encoder>;
         };
     };
 };
