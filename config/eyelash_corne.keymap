@@ -21,6 +21,12 @@
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
 
+&mt {
+    flavor = "tap-preferred";
+    tapping-term-ms = <300>;
+    quick-tap-ms = <100>;
+};
+
 / {
     behaviors {
         td0: td0 {
@@ -62,7 +68,7 @@
             display-name = "QWERTY";
             bindings = <
 &kp KP_PLUS   &kp Q           &kp W        &kp E           &kp R             &kp T                               &kp UP                &kp Y             &kp U              &kp I            &kp O        &kp P               &kp PIPE
-&kp ESCAPE    &mt LEFT_GUI A  &mt LCTRL S  &mt LEFT_ALT D  &mt LEFT_SHIFT F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H             &mt RIGHT_SHIFT J  &mt K RIGHT_ALT  &mt RCTRL L  &mt RIGHT_GUI SEMI  &kp EQUAL
+&kp ESCAPE    &mt LEFT_GUI A  &mt LCTRL S  &mt LEFT_ALT D  &mt LEFT_SHIFT F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H             &mt RIGHT_SHIFT J  &mt RIGHT_ALT K  &mt RCTRL L  &mt RIGHT_GUI SEMI  &kp EQUAL
 &kp KP_MINUS  &kp Z           &kp X        &kp C           &kp V             &kp B        &kp SPACE              &kp DOWN              &kp N             &kp M              &kp COMMA        &kp DOT      &kp FSLH            &kp TAB
                                            &kp BACKSPACE   &lt 1 SPACE       &lt 2 ENTER                                               &kp SINGLE_QUOTE  &kp GRAVE          &kp TAB
             >;
