@@ -146,7 +146,7 @@ layers:
   - {t: ADJUST, type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - RGB EFF
   ADJUST:
   - $$mdi:progress-download$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
